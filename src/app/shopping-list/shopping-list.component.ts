@@ -7,12 +7,12 @@ import{Ingredient} from './../shared/ingredient';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit {
-  ingredient : Ingredient[] = [
+  ingredients : Ingredient[] = [
     new Ingredient('apples', 5),
     new Ingredient('burgers', 30),
   ]
   constructor() {
-    console.log(this.ingredient);
+    console.log(this.ingredients);
    }
 
   ngOnInit() {

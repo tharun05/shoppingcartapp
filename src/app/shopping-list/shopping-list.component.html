@@ -1,4 +1,13 @@
-<div class="row">
-  <h1> this is from shopping list component</h1>
-  <app-shopping-edit></app-shopping-edit>
+<div class="row" style="border:1px solid;height:500px;width:100%;">
+  <h4>shopping list component</h4>
+  <div class="col-xs-10" style="border:1px solid;height:200px;width:100%;">
+    <h3>shopping edit component this is child component</h3>
+    <app-shopping-edit ></app-shopping-edit>
+    <hr>
+    <ul class="list-group">
+      <a class="list-group-item" style="cursor: pointer" *ngFor="let ingredient of ingredients">
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+    </ul>
+  </div>
 </div>
